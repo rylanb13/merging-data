@@ -13,17 +13,13 @@ angular.module('AddressBook', [])
         $scope.employees = pawneeEmployees;
         $scope.sortCol = 'lastName';
         $scope.searchString = "";
-
         $scope.sortReverse = false;
-
         $scope.sortBy = function(colName) {
             if($scope.sortCol == colName) {
                 $scope.sortReverse = !$scope.sortReverse;
-            }
-            else {
+            } else {
                 $scope.sortReverse = false;
             }
             $scope.sortCol = colName;
         }
-
     });
